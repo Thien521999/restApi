@@ -24,7 +24,7 @@ mongoose.connect(URI, {
     console.log('Mongodb connection')
 })
 
-// // Routes
+//Routes
 app.use('/api', routes);
 
 // Start server listening
