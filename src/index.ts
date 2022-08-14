@@ -15,13 +15,13 @@ app.use(express.json())
 app.use(express.urlencoded())
 
 // Database
-const URI = process.env.MONGODB_URL;
+const URI: any = process.env.MONGODB_URL;
 
 mongoose.connect(URI, {
     autoIndex: false
 }, (err) => {
     if(err) throw err;
-    console.log('Mongodb connection', err)
+    console.log('Mongodb connection')
 })
 
 // // Routes
